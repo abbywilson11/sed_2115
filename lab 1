@@ -1,0 +1,43 @@
+import { useState } from 'react' //import usaState from the react library
+import reactLogo from './assets/react.svg' //import reactLogo from ./assests/react.svg
+import viteLogo from '/vite.svg' //import viteLogo  from /vite.svg
+import './App.css' //import ./App.css
+
+function App() { //create a function called App
+  const [count, setCount] = useState(0) //the code sets the deafult to begin count at 0
+
+  return ( //develop a return from the application 
+    <>
+      <div> 
+        {/* div means division */}
+        <a href="https://vite.dev" target="_blank"> 
+        {/* opens link in new tab/window */}
+          <img src={viteLogo} className="logo" alt="Vite logo" />  {/* the  images that were imported are being defined */}
+        </a>
+        <a href="https://react.dev" target="_blank">
+        {/* gives the link to the user to take them to the website and the target blank opens a new window or tab */}
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Vite + React</h1> 
+      {/* hi = heading 1 */}
+      <div className="card"> 
+        {/* className is given a new definition of "card" */}
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+          {/* when the user clicks the button, it takes the count and adds 1  */}
+        </button>
+        <p>
+          Edit <code>src/App.jsx</code> and save to test HMR
+          {/* the code of the jsx file is edited and saves to test thr HMR */}
+        </p>
+      </div>
+      <p className="read-the-docs">
+        {/* className is redefined again to read-the-docs */}
+        Click on the Vite and React logos to learn more
+      </p>
+    </>
+  )
+}
+
+export default App //function exports the default app
