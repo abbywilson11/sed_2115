@@ -1,3 +1,4 @@
+// i wrote 95% of this code, with help with line 9 from chatgpt 
 function About() { //new function for about page 
   return ( //retun it to app.jsx and local 
     // add heading and subheading below for about page
@@ -15,3 +16,4 @@ function About() { //new function for about page
 }
 
 export default About; //expoprt to app.jsx
+
