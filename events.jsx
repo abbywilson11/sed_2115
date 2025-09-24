@@ -1,3 +1,4 @@
+// i added the imports form line 2 and 4
 import { useEffect, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
@@ -42,6 +43,7 @@ function Events() {
   }, []);
 
   // Filter events when category changes 
+// i wrote lines 47-57
   useEffect(() => {
     if (selectedCategory === "all") {
       setFilteredEvents(events); //shows all events (not filtered yet)
@@ -64,7 +66,8 @@ function Events() {
   });
 
   return (
-    <div style={{ height: "100%", width: "100%" }}>
+      // i wrote this little part
+    <div style={{ height: "100%", width: "100%" }}> 
       <h1>🌍 NASA Natural Events</h1>
 
       {/* Filter dropdown */}
@@ -134,3 +137,4 @@ function Events() {
 }
 
 export default Events; //export events to app.jsx
+
