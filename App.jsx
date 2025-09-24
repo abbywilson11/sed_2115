@@ -1,8 +1,10 @@
+//i wrote the imports
 import { Routes, Route, Link } from "react-router-dom"; // for navigation
 import Home from "./pages/Home"; //imports home page content
 import Events from "./pages/Events"; // imports events page content 
 import About from "./pages/About"; // imports about page content 
 
+//i wrote 25% of function app (first part)
 function App() { // function for application
   return ( // apply to local 
     <div
