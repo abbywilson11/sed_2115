@@ -1,3 +1,4 @@
+// i added the import
 import React from 'react';
 
 function Home() {
@@ -18,6 +19,7 @@ function Home() {
         padding: '40px',
       }}
 // create a heading/title and information for user on home page
+      // i wrote thi section for the written stuff on the application
     >
       <h1>🌍 Welcome to the Natural Event Tracker</h1>
       <p>Explore natural events happening around the world in real time from NASA's EONET API.</p>
@@ -26,3 +28,4 @@ function Home() {
 }
 
 export default Home;//export to app.jsx
+
